@@ -95,7 +95,10 @@ Terminar la instalación.
 Cerrar y volver a abrir cualquier consola o VS Code.
 
 ### Verificar en cmd:
+recordatorio que es con "V" mayuscula
+```bash
 dot -V
+```
 
 ### Si el comando muestra algo como:
 dot - graphviz version 14.0.2 (...
@@ -104,3 +107,22 @@ dot - graphviz version 14.0.2 (...
 entonces Graphviz está correctamente instalado y agregado al PATH.
 
 Si no reconoce dot, hay que revisar el PATH o reinstalar marcando la opción de “Add Graphviz to the system PATH…”.
+
+### Tambien debes de descargar esta libreria para poder visualizar los diagramas que tiene el programa
+
+esto funciona para crear un entorno virtual
+
+```bash
+python -m venv .venv
+```
+activar el entorno virtual
+``` bash
+.\.venv\Scripts\Activate.ps1
+```
+
+tambien colocar esta linea de codigo para el 100% funcionamiento
+``` bash
+pip install graphviz reportlab
+```
+
+al finalizar todo esto ya estaria todo preparado para que funcione el programa 
